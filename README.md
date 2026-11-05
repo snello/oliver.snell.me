@@ -69,4 +69,4 @@ The dock and top bar are set in `theme_config.nav` in `_config.yml`. Labels come
 
 The site uses the Snell theme in `themes/snell`, built from the "Oliver Snell" design system. It is part of this repository, so commit theme changes here directly. See `themes/snell/README.md` for which front matter each layout reads.
 
-Site content for the theme lives in `_config.snell.yml`. The previous theme, hexo-theme-cactus, is still a submodule at `themes/hexo-theme-cactus`; set `theme: hexo-theme-cactus` in `_config.yml` to switch back.
+Site content for the theme lives in `_config.snell.yml`.
