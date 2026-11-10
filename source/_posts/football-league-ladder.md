@@ -1,5 +1,6 @@
 ---
 layout: project
+image: /images/projects/league-ladder.webp
 title: Football League Ladder
 date: 2025-10-06
 repository: https://github.com/snello/League-Table-Ladder

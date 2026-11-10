@@ -1,5 +1,7 @@
 ---
 layout: project
+image: /images/klyo-og-preview.png
+image_position: right center
 title: Klyo
 date: 2025-10-06
 description: A digital memory vault

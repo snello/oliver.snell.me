@@ -1,7 +1,8 @@
 <a class="sn-card" href="<%- url_for(item.path) %>">
-  <div class="sn-card-media<%= item.image ? '' : ' is-type' %>">
+  <div class="sn-card-media<%= item.image ? ' has-image' : ' is-type' %>">
     <% if (item.image) { %>
-      <img src="<%- url_for(item.image) %>" alt="" loading="lazy">
+      <img src="<%- url_for(item.image) %>" alt="" loading="lazy"<%- item.image_position ? ' style="object-position: ' + item.image_position + '"' : '' %>>
+      <% if (item.description) { %><span class="sn-card-overlay"><span class="sn-card-type-note"><%= item.description %></span></span><% } %>
     <% } else { %>
       <span class="sn-card-type-title"><%= item.title %></span>
       <% if (item.description) { %><span class="sn-card-type-note"><%= item.description %></span><% } %>

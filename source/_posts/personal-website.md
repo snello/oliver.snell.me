@@ -1,5 +1,6 @@
 ---
 layout: project
+image: /images/projects/personal-website.webp
 title: Personal Website
 date: 2025-10-06
 repository: https://github.com/snello/snell.me
