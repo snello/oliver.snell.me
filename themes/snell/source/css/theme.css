@@ -118,6 +118,8 @@ a.sn-tag:hover { background: var(--ink); color: var(--surface); }
 .sn-card-type-title { font-size: 40px; line-height: 1.05; letter-spacing: -0.02em; max-width: 90%; transition: transform .4s ease; transform-origin: left top; }
 .sn-card:hover .sn-card-type-title { transform: scale(1.03); }
 .sn-card-type-note { font-family: var(--font-mono); font-size: 12px; line-height: 1.4; max-width: 340px; opacity: .85; }
+.sn-card-media.has-image { background: #0b0908; }
+.sn-card-overlay { position: absolute; inset: 0; display: flex; align-items: flex-end; padding: var(--space-6); color: #fff; background: linear-gradient(to top, rgba(0, 0, 0, .65), rgba(0, 0, 0, 0) 55%); pointer-events: none; }
 @media (max-width: 720px) { .sn-card-type-title { font-size: 32px; } }
 .sn-card-caption { display: flex; align-items: center; gap: var(--space-2); margin-top: var(--space-3); font-size: 16px; line-height: 1.5; }
 .sn-card-caption .sn-ring { width: 20px; height: 20px; }
@@ -181,6 +183,9 @@ a.sn-tag:hover { background: var(--ink); color: var(--surface); }
 .sn-actions { display: flex; flex-wrap: wrap; gap: var(--space-8); margin: calc(var(--space-6) * -1) 0 var(--space-12); }
 .sn-hero-image { margin: 0 0 var(--space-12); }
 .sn-hero-image img { width: 100%; border-radius: var(--radius-lg); display: block; }
+.sn-project-hero { margin: 0 0 var(--space-12); }
+.sn-project-hero img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--radius-lg); display: block; background: #0b0908; }
+@media (max-width: 720px) { .sn-project-hero img { aspect-ratio: 4 / 3; } }
 
 /* Prose: rendered Markdown */
 .sn-prose { max-width: 680px; font-size: 18px; line-height: 1.65; }

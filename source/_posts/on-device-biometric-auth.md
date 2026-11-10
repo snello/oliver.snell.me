@@ -1,5 +1,6 @@
 ---
 layout: project
+image: /images/projects/age-detection.webp
 title: On-Device Age & Gender Detection
 date: 2025-10-06
 description: Privacy-preserving facial age and gender estimation using browser-based ML
