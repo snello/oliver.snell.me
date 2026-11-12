@@ -26,6 +26,18 @@
 </section>
 <% } %>
 
+<% var roles = snell_featured_roles(); if (roles.length) { %>
+<section class="sn-section">
+  <div class="sn-section-head">
+    <h2 class="sn-heading"><%= h.roles_heading %></h2>
+    <a class="sn-btn sn-btn-link" href="<%- url_for(theme.nav.career || '/career/') %>"><%= __('labels.all_roles') %><span class="sn-ring"><%- snell_icon('arrow-right', 14) %></span></a>
+  </div>
+  <div class="sn-rows">
+    <% roles.forEach(function (r) { %><%- partial('_partial/job-row', { item: r }) %><% }) %>
+  </div>
+</section>
+<% } %>
+
 <% var projects = snell_projects().slice(0, h.work_count || 4); if (projects.length) { %>
 <section class="sn-section">
   <div class="sn-section-head">
@@ -36,18 +48,6 @@
     <% projects.forEach(function (p) { %><%- partial('_partial/project-card', { item: p }) %><% }) %>
   </div>
   <div class="sn-center"><a class="sn-btn sn-btn-pill" href="<%- url_for(theme.nav.projects || '/projects/') %>"><span class="sn-dot"></span><%= __('labels.all_work') %></a></div>
-</section>
-<% } %>
-
-<% var roles = snell_featured_roles(); if (roles.length) { %>
-<section class="sn-section">
-  <div class="sn-section-head">
-    <h2 class="sn-heading"><%= h.roles_heading %></h2>
-    <a class="sn-btn sn-btn-link" href="<%- url_for(theme.nav.career || '/career/') %>"><%= __('labels.all_roles') %><span class="sn-ring"><%- snell_icon('arrow-right', 14) %></span></a>
-  </div>
-  <div class="sn-rows">
-    <% roles.forEach(function (r) { %><%- partial('_partial/job-row', { item: r }) %><% }) %>
-  </div>
 </section>
 <% } %>
 
